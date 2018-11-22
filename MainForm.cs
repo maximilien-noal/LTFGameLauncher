@@ -44,7 +44,7 @@ namespace LTFGameLauncher
                 ManualButton.Visible = false;
             }
 
-            if (File.Exists(Path.Combine(_workDir, "setup.exe")) == false)
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.SetupExeName))
             {
                 SetupButton.Visible = false;
             }
@@ -68,6 +68,7 @@ namespace LTFGameLauncher
 
             this.ManualButton.Location = new Point(Convert.ToInt32(this.Width / 2 - this.ManualButton.Width / 1.7), this.ManualButton.Location.Y);
             this.SetupButton.Location = new Point(Convert.ToInt32(this.Width / 2 - this.SetupButton.Width / 1.7), this.SetupButton.Location.Y);
+            this.Action3Button.Location = new Point(Convert.ToInt32(this.Width / 2 - this.Action3Button.Width / 1.7), this.Action3Button.Location.Y);
             this.PlayButton.Location = new Point(Convert.ToInt32(this.Width / 2 - this.PlayButton.Width / 1.7), this.PlayButton.Location.Y);
             this.DisableGraphicalWrapperCheckBox.Location = new Point(this.Width / 2 - this.DisableGraphicalWrapperCheckBox.Width / 2, this.DisableGraphicalWrapperCheckBox.Location.Y);
             this.GraphicsWrapperCheckBoxLabel.Location = new Point(this.Width / 2 - this.GraphicsWrapperCheckBoxLabel.Width / 2, this.GraphicsWrapperCheckBoxLabel.Location.Y);
@@ -84,9 +85,9 @@ namespace LTFGameLauncher
             try
             {
                 EnableOrDisableGraphicsWrapper();
-                if(string.IsNullOrWhiteSpace(Properties.Settings.Default.WarningMessage) == false)
+                if(string.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction3Exe) == false)
                 {
-                    MessageBox.Show(Properties.Settings.Default.WarningMessage, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Properties.Settings.Default.AdditionAction3Exe, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 Process.Start(Path.Combine(_workDir, "lancer.bat"));
                 Application.Exit();

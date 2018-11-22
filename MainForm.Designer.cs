@@ -36,6 +36,7 @@
             this.SetupButton = new System.Windows.Forms.Button();
             this.Action1Button = new System.Windows.Forms.Button();
             this.Action2Button = new System.Windows.Forms.Button();
+            this.Action3Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlayButton
@@ -51,10 +52,10 @@
             this.DisableGraphicalWrapperCheckBox.Name = "DisableGraphicalWrapperCheckBox";
             this.DisableGraphicalWrapperCheckBox.UseVisualStyleBackColor = true;
             // 
-            // dgVoodooLabel
+            // GraphicsWrapperCheckBoxLabel
             // 
-            resources.ApplyResources(this.GraphicsWrapperCheckBoxLabel, "dgVoodooLabel");
-            this.GraphicsWrapperCheckBoxLabel.Name = "dgVoodooLabel";
+            resources.ApplyResources(this.GraphicsWrapperCheckBoxLabel, "GraphicsWrapperCheckBoxLabel");
+            this.GraphicsWrapperCheckBoxLabel.Name = "GraphicsWrapperCheckBoxLabel";
             // 
             // ManualButton
             // 
@@ -84,10 +85,17 @@
             this.Action2Button.UseVisualStyleBackColor = true;
             this.Action2Button.Click += new System.EventHandler(this.Action2Button_Click);
             // 
+            // Action3Button
+            // 
+            resources.ApplyResources(this.Action3Button, "Action3Button");
+            this.Action3Button.Name = "Action3Button";
+            this.Action3Button.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Action3Button);
             this.Controls.Add(this.Action2Button);
             this.Controls.Add(this.Action1Button);
             this.Controls.Add(this.SetupButton);
@@ -112,6 +120,7 @@
         private System.Windows.Forms.Button SetupButton;
         private System.Windows.Forms.Button Action1Button;
         private System.Windows.Forms.Button Action2Button;
+        private System.Windows.Forms.Button Action3Button;
     }
 }
 

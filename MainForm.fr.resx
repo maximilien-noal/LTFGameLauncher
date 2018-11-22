@@ -117,20 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PlayButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 5</value>
+  </data>
   <data name="PlayButton.Text" xml:space="preserve">
     <value>Jouer</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DisableGraphicalWrapperCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 30</value>
+  </data>
   <data name="DisableGraphicalWrapperCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 17</value>
   </data>
   <data name="DisableGraphicalWrapperCheckBox.Text" xml:space="preserve">
     <value>Désactiver dgVoodoo2</value>
   </data>
-  <data name="dgVoodooLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GraphicsWrapperCheckBoxLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GraphicsWrapperCheckBoxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 50</value>
+  </data>
+  <data name="GraphicsWrapperCheckBoxLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 13</value>
   </data>
-  <data name="dgVoodooLabel.Text" xml:space="preserve">
+  <data name="GraphicsWrapperCheckBoxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GraphicsWrapperCheckBoxLabel.Text" xml:space="preserve">
     <value>(Utile en cas de problème)</value>
   </data>
   <data name="ManualButton.Text" xml:space="preserve">
