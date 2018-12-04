@@ -90,6 +90,7 @@
             resources.ApplyResources(this.Action3Button, "Action3Button");
             this.Action3Button.Name = "Action3Button";
             this.Action3Button.UseVisualStyleBackColor = true;
+            this.Action3Button.Click += new System.EventHandler(this.Action3Button_Click);
             // 
             // MainForm
             // 

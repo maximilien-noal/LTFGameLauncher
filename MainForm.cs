@@ -66,6 +66,15 @@ namespace LTFGameLauncher
                 Action2Button.Text = Properties.Settings.Default.AdditionAction2Name;
             }
 
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction3Exe))
+            {
+                Action3Button.Visible = false;
+            }
+            else
+            {
+                Action3Button.Text = Properties.Settings.Default.AdditionAction3Name;
+            }
+
             this.ManualButton.Location = new Point(Convert.ToInt32(this.Width / 2 - this.ManualButton.Width / 1.7), this.ManualButton.Location.Y);
             this.SetupButton.Location = new Point(Convert.ToInt32(this.Width / 2 - this.SetupButton.Width / 1.7), this.SetupButton.Location.Y);
             this.Action3Button.Location = new Point(Convert.ToInt32(this.Width / 2 - this.Action3Button.Width / 1.7), this.Action3Button.Location.Y);
@@ -201,6 +210,20 @@ namespace LTFGameLauncher
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.AdditionAction2Exe + " ? :(");
+            }
+        }
+
+        private void Action3Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EnableOrDisableGraphicsWrapper();
+                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.AdditionAction3Exe));
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.AdditionAction3Exe + " ? :(");
             }
         }
     }
