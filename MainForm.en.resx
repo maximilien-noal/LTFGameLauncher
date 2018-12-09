@@ -118,6 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PlayButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 5</value>
+  </data>
+  <data name="PlayButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 23</value>
+  </data>
+  <data name="ManualButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 102</value>
+  </data>
+  <data name="ManualButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 23</value>
+  </data>
+  <data name="SetupButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 131</value>
+  </data>
+  <data name="SetupButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 23</value>
+  </data>
+  <data name="Action1Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="Action2Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 102</value>
+  </data>
+  <data name="Action2Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="Action3Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 73</value>
+  </data>
+  <data name="Action3Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 23</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAoAAAAAAAEAIAAZrwAApgAAADAwAAABACAAqCUAAL+vAAAgIAAAAQAgAKgQAABn1QAAEBAAAAEA
