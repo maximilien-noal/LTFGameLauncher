@@ -94,9 +94,9 @@ namespace LTFGameLauncher
             try
             {
                 EnableOrDisableGraphicsWrapper();
-                if(string.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction3Exe) == false)
+                if(string.IsNullOrWhiteSpace(Properties.Settings.Default.WarningMessage) == false)
                 {
-                    MessageBox.Show(Properties.Settings.Default.AdditionAction3Exe, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Properties.Settings.Default.WarningMessage, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 Process.Start(Path.Combine(_workDir, "lancer.bat"));
                 Application.Exit();
