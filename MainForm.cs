@@ -176,12 +176,12 @@ namespace LTFGameLauncher
             try
             {
                 EnableOrDisableGraphicsWrapper();
-                Process.Start(Path.Combine(_workDir, "Setup.exe"));
+                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.SetupExeName));
                 Application.Exit();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Pas de setup.exe ? :(");
+                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.SetupExeName + " :(");
             }
         }
 

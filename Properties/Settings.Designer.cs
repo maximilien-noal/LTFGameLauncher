@@ -124,5 +124,14 @@ namespace LTFGameLauncher.Properties {
                 return ((string)(this["WarningMessage"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PlayButtonText {
+            get {
+                return ((string)(this["PlayButtonText"]));
+            }
+        }
     }
 }
