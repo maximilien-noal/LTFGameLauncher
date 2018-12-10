@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PlayButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 5</value>
+    <value>3, 5</value>
   </data>
   <data name="PlayButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 23</value>
+    <value>299, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PlayButton.TabIndex" type="System.Int32, mscorlib">
@@ -147,7 +147,7 @@
     <value>True</value>
   </data>
   <data name="DisableGraphicalWrapperCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 30</value>
+    <value>90, 30</value>
   </data>
   <data name="DisableGraphicalWrapperCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 17</value>
@@ -171,7 +171,7 @@
     <value>6</value>
   </data>
   <data name="GraphicsWrapperCheckBoxLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 50</value>
+    <value>82, 50</value>
   </data>
   <data name="GraphicsWrapperCheckBoxLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 15</value>
@@ -195,7 +195,7 @@
     <value>5</value>
   </data>
   <data name="ManualButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 102</value>
+    <value>127, 102</value>
   </data>
   <data name="ManualButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
@@ -219,10 +219,10 @@
     <value>4</value>
   </data>
   <data name="SetupButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 131</value>
+    <value>3, 131</value>
   </data>
   <data name="SetupButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+    <value>299, 23</value>
   </data>
   <data name="SetupButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -246,7 +246,7 @@
     <value>3, 102</value>
   </data>
   <data name="Action1Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 23</value>
+    <value>120, 23</value>
   </data>
   <data name="Action1Button.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -267,10 +267,10 @@
     <value>2</value>
   </data>
   <data name="Action2Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 102</value>
+    <value>182, 102</value>
   </data>
   <data name="Action2Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 23</value>
+    <value>120, 23</value>
   </data>
   <data name="Action2Button.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -291,10 +291,10 @@
     <value>1</value>
   </data>
   <data name="Action3Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 73</value>
+    <value>3, 73</value>
   </data>
   <data name="Action3Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 23</value>
+    <value>299, 23</value>
   </data>
   <data name="Action3Button.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -314,9 +314,6 @@
   <data name="&gt;&gt;Action3Button.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
