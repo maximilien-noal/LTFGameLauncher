@@ -121,16 +121,10 @@
   <data name="PlayButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PlayButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 5</value>
-  </data>
-  <data name="PlayButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 23</value>
-  </data>
   <data name="PlayButton.Text" xml:space="preserve">
     <value>Jouer</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="DisableGraphicalWrapperCheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 30</value>
   </data>
@@ -165,26 +159,8 @@
   <data name="SetupButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>298, 23</value>
   </data>
-  <data name="SetupButton.Text" xml:space="preserve">
-    <value>Options</value>
-  </data>
   <data name="Action1Button.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 102</value>
-  </data>
-  <data name="Action1Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 23</value>
-  </data>
-  <data name="Action2Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 102</value>
-  </data>
-  <data name="Action2Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 23</value>
-  </data>
-  <data name="Action3Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 73</value>
-  </data>
-  <data name="Action3Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 23</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
