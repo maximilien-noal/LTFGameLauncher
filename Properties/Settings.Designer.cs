@@ -133,5 +133,14 @@ namespace LTFGameLauncher.Properties {
                 return ((string)(this["PlayButtonText"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("lancer.bat")]
+        public string GameExecutable {
+            get {
+                return ((string)(this["GameExecutable"]));
+            }
+        }
     }
 }

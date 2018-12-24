@@ -99,12 +99,12 @@ namespace LTFGameLauncher
                 {
                     MessageBox.Show(Properties.Settings.Default.WarningMessage, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                Process.Start(Path.Combine(_workDir, "lancer.bat"));
+                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
                 Application.Exit();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Pas de lancer.bat ? :(");
+                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.GameExecutable + " :(");
             }
         }
 
