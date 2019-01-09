@@ -142,5 +142,14 @@ namespace LTFGameLauncher.Properties {
                 return ((string)(this["GameExecutable"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KillProcessOnExit {
+            get {
+                return ((bool)(this["KillProcessOnExit"]));
+            }
+        }
     }
 }

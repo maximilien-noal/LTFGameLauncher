@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Diagnostics;
-using System.Reflection;
+using System.Drawing;
 using System.IO;
+using System.Reflection;
+using System.Windows.Forms;
 
 namespace LTFGameLauncher
 {
     public partial class MainForm : Form
     {
         private string _workDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        private Process _proc = new Process();
+        private Timer _waitTimer = new Timer();
 
         public MainForm()
         {
@@ -88,6 +85,7 @@ namespace LTFGameLauncher
         {
             Properties.Settings.Default.IsGraphicalWrapperDisabled = this.DisableGraphicalWrapperCheckBox.Checked;
             Properties.Settings.Default.Save();
+            _waitTimer.Dispose();
         }
 
         private void PlayButton_Click(object sender, EventArgs e)
@@ -99,12 +97,47 @@ namespace LTFGameLauncher
                 {
                     MessageBox.Show(Properties.Settings.Default.WarningMessage, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
-                Application.Exit();
+                if(Properties.Settings.Default.KillProcessOnExit == false)
+                {
+                    Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
+                    Application.Exit();
+                }
+                _proc = Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
+                WindowState = FormWindowState.Minimized;
+                _proc.WaitForInputIdle(5000);
+                _waitTimer.Tick += _waitTimer_Tick;
+                _waitTimer.Interval = 500;
+                _waitTimer.Enabled = true;
+                _waitTimer.Start();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.GameExecutable + " :(");
+            }
+        }
+
+        private void _waitTimer_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                _proc.Refresh();
+                if(_proc.MainWindowHandle == IntPtr.Zero || _proc.MainWindowHandle == null)
+                {
+                    _proc.Kill();
+                    Application.Exit();
+                }
+            }
+            catch
+            {
+                try
+                {
+                    _proc.Kill();
+                    Application.Exit();
+                }
+                catch
+                {
+                }
+                Application.Exit();
             }
         }
 
