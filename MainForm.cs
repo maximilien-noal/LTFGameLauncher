@@ -129,14 +129,6 @@ namespace LTFGameLauncher
             }
             catch
             {
-                try
-                {
-                    _proc.Kill();
-                    Application.Exit();
-                }
-                catch
-                {
-                }
                 Application.Exit();
             }
         }
