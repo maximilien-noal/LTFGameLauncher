@@ -106,7 +106,7 @@ namespace LTFGameLauncher
                 WindowState = FormWindowState.Minimized;
                 _proc.WaitForInputIdle(5000);
                 _waitTimer.Tick += _waitTimer_Tick;
-                _waitTimer.Interval = 500;
+                _waitTimer.Interval = 2000;
                 _waitTimer.Enabled = true;
                 _waitTimer.Start();
             }
