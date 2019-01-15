@@ -137,7 +137,7 @@ namespace LTFGameLauncher
         {
             try
             {
-                string[] dgVoodooFiles = { "D3DImm.DLL", "DDraw.DLL", "D3D8.dll", "Glide.dll", "Glide2x.dll", "Glide3x.dll" };
+                string[] dgVoodooFiles = { "D3DImm.DLL", "DDraw.DLL", "D3D8.dll", "D3D9.dll", "Glide.dll", "Glide2x.dll", "Glide3x.dll" };
                 foreach (var path in dgVoodooFiles)
                 {
                     string fullPath = Path.Combine(_workDir, path);
