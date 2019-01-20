@@ -29,7 +29,10 @@
     <Setting Name="AdditionAction3Name" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="SetupExeName" Type="System.String" Scope="Application">
+    <Setting Name="AdditionAction4Exe" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AdditionAction4Name" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="WarningMessage" Type="System.String" Scope="Application">
@@ -39,7 +42,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="GameExecutable" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">lancer.bat</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="KillProcessOnExit" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">False</Value>

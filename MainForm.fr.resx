@@ -153,11 +153,11 @@
   <data name="ManualButton.Text" xml:space="preserve">
     <value>Manuel</value>
   </data>
-  <data name="SetupButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 131</value>
-  </data>
-  <data name="SetupButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Action4Button.Size" type="System.Drawing.Size, System.Drawing">
     <value>298, 23</value>
+  </data>
+  <data name="Action4Button.Text" xml:space="preserve">
+    <value>Action4</value>
   </data>
   <data name="Action1Button.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 102</value>

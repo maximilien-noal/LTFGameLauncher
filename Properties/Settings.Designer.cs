@@ -110,9 +110,18 @@ namespace LTFGameLauncher.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SetupExeName {
+        public string AdditionAction4Exe {
             get {
-                return ((string)(this["SetupExeName"]));
+                return ((string)(this["AdditionAction4Exe"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string AdditionAction4Name {
+            get {
+                return ((string)(this["AdditionAction4Name"]));
             }
         }
         
@@ -136,7 +145,7 @@ namespace LTFGameLauncher.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("lancer.bat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string GameExecutable {
             get {
                 return ((string)(this["GameExecutable"]));

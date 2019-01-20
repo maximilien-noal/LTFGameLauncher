@@ -131,6 +131,9 @@
   <data name="&gt;&gt;ManualButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;Action4Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;PlayButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -140,14 +143,17 @@
   <data name="&gt;&gt;SetupButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
   <data name="ManualButton.Text" xml:space="preserve">
     <value>Manual</value>
   </data>
   <data name="Action3Button.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;DisableGraphicalWrapperCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Action1Button.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;DisableGraphicalWrapperCheckBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -182,8 +188,11 @@
   <data name="ManualButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 102</value>
   </data>
-  <data name="&gt;&gt;Action1Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Action4Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 131</value>
+  </data>
+  <data name="&gt;&gt;Action4Button.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="SetupButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -197,14 +206,20 @@
   <data name="Action2Button.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;DisableGraphicalWrapperCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Action3Button.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="PlayButton.Text" xml:space="preserve">
+    <value>Play</value>
   </data>
   <data name="&gt;&gt;SetupButton.Name" xml:space="preserve">
     <value>SetupButton</value>
   </data>
-  <data name="&gt;&gt;Action2Button.Name" xml:space="preserve">
-    <value>Action2Button</value>
+  <data name="&gt;&gt;GraphicsWrapperCheckBoxLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
@@ -246,23 +261,20 @@
   <data name="&gt;&gt;DisableGraphicalWrapperCheckBox.Name" xml:space="preserve">
     <value>DisableGraphicalWrapperCheckBox</value>
   </data>
-  <data name="DisableGraphicalWrapperCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 17</value>
-  </data>
   <data name="SetupButton.Text" xml:space="preserve">
     <value>Options...</value>
   </data>
   <data name="Action3Button.Text" xml:space="preserve">
     <value>Action3</value>
   </data>
+  <data name="&gt;&gt;Action3Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="GraphicsWrapperCheckBoxLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 15</value>
   </data>
-  <data name="&gt;&gt;GraphicsWrapperCheckBoxLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Action3Button.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Action4Button.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Action3Button.Name" xml:space="preserve">
     <value>Action3Button</value>
@@ -272,6 +284,9 @@
   </data>
   <data name="DisableGraphicalWrapperCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;Action2Button.Name" xml:space="preserve">
+    <value>Action2Button</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1448,14 +1463,11 @@
   <data name="&gt;&gt;Action1Button.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;Action3Button.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Action1Button.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="Action4Button.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="Action1Button.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 23</value>
@@ -1472,8 +1484,11 @@
   <data name="SetupButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 23</value>
   </data>
-  <data name="PlayButton.Text" xml:space="preserve">
-    <value>Play</value>
+  <data name="&gt;&gt;Action1Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DisableGraphicalWrapperCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
   </data>
   <data name="DisableGraphicalWrapperCheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 30</value>
@@ -1490,8 +1505,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>304, 161</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DisableGraphicalWrapperCheckBox.Text" xml:space="preserve">
     <value>Disable dgVoodoo2</value>
@@ -1501,6 +1516,9 @@
   </data>
   <data name="&gt;&gt;PlayButton.Name" xml:space="preserve">
     <value>PlayButton</value>
+  </data>
+  <data name="&gt;&gt;Action4Button.Name" xml:space="preserve">
+    <value>Action4Button</value>
   </data>
   <data name="&gt;&gt;SetupButton.ZOrder" xml:space="preserve">
     <value>3</value>

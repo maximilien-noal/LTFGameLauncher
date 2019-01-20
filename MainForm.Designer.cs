@@ -33,7 +33,7 @@
             this.DisableGraphicalWrapperCheckBox = new System.Windows.Forms.CheckBox();
             this.GraphicsWrapperCheckBoxLabel = new System.Windows.Forms.Label();
             this.ManualButton = new System.Windows.Forms.Button();
-            this.SetupButton = new System.Windows.Forms.Button();
+            this.Action4Button = new System.Windows.Forms.Button();
             this.Action1Button = new System.Windows.Forms.Button();
             this.Action2Button = new System.Windows.Forms.Button();
             this.Action3Button = new System.Windows.Forms.Button();
@@ -64,12 +64,12 @@
             this.ManualButton.UseVisualStyleBackColor = true;
             this.ManualButton.Click += new System.EventHandler(this.ManualButton_Click);
             // 
-            // SetupButton
+            // Action4Button
             // 
-            resources.ApplyResources(this.SetupButton, "SetupButton");
-            this.SetupButton.Name = "SetupButton";
-            this.SetupButton.UseVisualStyleBackColor = true;
-            this.SetupButton.Click += new System.EventHandler(this.SetupButton_Click);
+            resources.ApplyResources(this.Action4Button, "Action4Button");
+            this.Action4Button.Name = "Action4Button";
+            this.Action4Button.UseVisualStyleBackColor = true;
+            this.Action4Button.Click += new System.EventHandler(this.SetupButton_Click);
             // 
             // Action1Button
             // 
@@ -99,7 +99,7 @@
             this.Controls.Add(this.Action3Button);
             this.Controls.Add(this.Action2Button);
             this.Controls.Add(this.Action1Button);
-            this.Controls.Add(this.SetupButton);
+            this.Controls.Add(this.Action4Button);
             this.Controls.Add(this.ManualButton);
             this.Controls.Add(this.GraphicsWrapperCheckBoxLabel);
             this.Controls.Add(this.DisableGraphicalWrapperCheckBox);
@@ -118,7 +118,7 @@
         private System.Windows.Forms.CheckBox DisableGraphicalWrapperCheckBox;
         private System.Windows.Forms.Label GraphicsWrapperCheckBoxLabel;
         private System.Windows.Forms.Button ManualButton;
-        private System.Windows.Forms.Button SetupButton;
+        private System.Windows.Forms.Button Action4Button;
         private System.Windows.Forms.Button Action1Button;
         private System.Windows.Forms.Button Action2Button;
         private System.Windows.Forms.Button Action3Button;

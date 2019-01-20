@@ -41,12 +41,7 @@ namespace LTFGameLauncher
                 ManualButton.Visible = false;
             }
 
-            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.SetupExeName))
-            {
-                SetupButton.Visible = false;
-            }
-
-            if(String.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction1Exe))
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction1Exe))
             {
                 Action1Button.Visible = false;
             }
@@ -54,6 +49,7 @@ namespace LTFGameLauncher
             {
                 Action1Button.Text = Properties.Settings.Default.AdditionAction1Name;
             }
+
             if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction2Exe))
             {
                 Action2Button.Visible = false;
@@ -72,7 +68,16 @@ namespace LTFGameLauncher
                 Action3Button.Text = Properties.Settings.Default.AdditionAction3Name;
             }
 
-            if(string.IsNullOrWhiteSpace(Properties.Settings.Default.PlayButtonText) == false)
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.AdditionAction4Exe))
+            {
+                Action4Button.Visible = false;
+            }
+            else
+            {
+                Action4Button.Text = Properties.Settings.Default.AdditionAction4Name;
+            }
+
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.PlayButtonText) == false)
             {
                 this.PlayButton.Text = Properties.Settings.Default.PlayButtonText;
             }
@@ -202,12 +207,12 @@ namespace LTFGameLauncher
             try
             {
                 EnableOrDisableGraphicsWrapper();
-                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.SetupExeName));
+                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.AdditionAction4Exe));
                 Application.Exit();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.SetupExeName + " :(");
+                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.AdditionAction4Exe + " :(");
             }
         }
 
