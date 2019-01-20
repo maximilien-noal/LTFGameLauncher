@@ -202,20 +202,6 @@ namespace LTFGameLauncher
             }
         }
 
-        private void SetupButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                EnableOrDisableGraphicsWrapper();
-                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.AdditionAction4Exe));
-                Application.Exit();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.AdditionAction4Exe + " :(");
-            }
-        }
-
         private void Action1Button_Click(object sender, EventArgs e)
         {
             try
@@ -255,6 +241,20 @@ namespace LTFGameLauncher
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.AdditionAction3Exe + " ? :(");
+            }
+        }
+
+        private void Action4Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EnableOrDisableGraphicsWrapper();
+                Process.Start(Path.Combine(_workDir, Properties.Settings.Default.AdditionAction4Exe));
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Pas de " + Properties.Settings.Default.AdditionAction4Exe + " :(");
             }
         }
     }

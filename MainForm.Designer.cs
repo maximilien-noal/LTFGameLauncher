@@ -69,7 +69,7 @@
             resources.ApplyResources(this.Action4Button, "Action4Button");
             this.Action4Button.Name = "Action4Button";
             this.Action4Button.UseVisualStyleBackColor = true;
-            this.Action4Button.Click += new System.EventHandler(this.SetupButton_Click);
+            this.Action4Button.Click += new System.EventHandler(this.Action4Button_Click);
             // 
             // Action1Button
             // 
