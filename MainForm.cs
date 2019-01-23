@@ -107,13 +107,16 @@ namespace LTFGameLauncher
                     Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
                     Application.Exit();
                 }
-                _proc = Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
-                WindowState = FormWindowState.Minimized;
-                _proc.WaitForInputIdle(5000);
-                _waitTimer.Tick += _waitTimer_Tick;
-                _waitTimer.Interval = 2000;
-                _waitTimer.Enabled = true;
-                _waitTimer.Start();
+                else
+                {
+                    _proc = Process.Start(Path.Combine(_workDir, Properties.Settings.Default.GameExecutable));
+                    WindowState = FormWindowState.Minimized;
+                    _proc.WaitForInputIdle(5000);
+                    _waitTimer.Tick += _waitTimer_Tick;
+                    _waitTimer.Interval = 2000;
+                    _waitTimer.Enabled = true;
+                    _waitTimer.Start();
+                }
             }
             catch (Exception ex)
             {
