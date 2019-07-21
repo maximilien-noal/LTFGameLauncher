@@ -19,17 +19,17 @@ namespace LTFGameLauncher.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Localization {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Localization() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace LTFGameLauncher.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LTFGameLauncher.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LTFGameLauncher.Properties.Localization", typeof(Localization).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,42 @@ namespace LTFGameLauncher.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable .
+        /// </summary>
+        internal static string Disable {
+            get {
+                return ResourceManager.GetString("Disable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Useful in case of problems).
+        /// </summary>
+        internal static string DisableTip {
+            get {
+                return ResourceManager.GetString("DisableTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manual.
+        /// </summary>
+        internal static string Manual {
+            get {
+                return ResourceManager.GetString("Manual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Play.
+        /// </summary>
+        internal static string Play {
+            get {
+                return ResourceManager.GetString("Play", resourceCulture);
             }
         }
     }

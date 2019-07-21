@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LTFGameLauncher.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="IsGraphicalWrapperDisabled" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="GraphicalWrapperName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">dgVoodoo2</Value>
     </Setting>
@@ -45,6 +42,9 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="KillProcessOnExit" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsGraphicalWrapperDisabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
