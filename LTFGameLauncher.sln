@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29102.190
+VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTFGameLauncher", "LTFGameLauncher.csproj", "{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LTFGameLauncher", "LTFGameLauncher.csproj", "{AD43E1FE-F32B-4292-A91A-0B94D25FEE34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD43E1FE-F32B-4292-A91A-0B94D25FEE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD43E1FE-F32B-4292-A91A-0B94D25FEE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD43E1FE-F32B-4292-A91A-0B94D25FEE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD43E1FE-F32B-4292-A91A-0B94D25FEE34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1792C3C8-CC96-4396-91B6-3445D19F76C3}
+		SolutionGuid = {EB04E227-588C-49DB-A970-4F5B370A04C3}
 	EndGlobalSection
 EndGlobal

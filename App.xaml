@@ -5,8 +5,8 @@
              xmlns:vm="clr-namespace:LTFGameLauncher.ViewModel"
              StartupUri="MainWindow.xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             d1p1:Ignorable="d">
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
     <Application.Resources>
         <Style TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle">
@@ -62,6 +62,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
+        <vm:ViewModelLocator x:Key="Locator" />
     </Application.Resources>
 </Application>
