@@ -22,7 +22,7 @@ namespace LTFGameLauncher.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Localization {
+    public class Localization {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace LTFGameLauncher.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LTFGameLauncher.Properties.Localization", typeof(Localization).Assembly);
@@ -51,7 +51,7 @@ namespace LTFGameLauncher.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace LTFGameLauncher.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Disable .
         /// </summary>
-        internal static string Disable {
+        public static string Disable {
             get {
                 return ResourceManager.GetString("Disable", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace LTFGameLauncher.Properties {
         /// <summary>
         ///   Looks up a localized string similar to (Useful in case of problems).
         /// </summary>
-        internal static string DisableTip {
+        public static string DisableTip {
             get {
                 return ResourceManager.GetString("DisableTip", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace LTFGameLauncher.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Manual.
         /// </summary>
-        internal static string Manual {
+        public static string Manual {
             get {
                 return ResourceManager.GetString("Manual", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace LTFGameLauncher.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Play.
         /// </summary>
-        internal static string Play {
+        public static string Play {
             get {
                 return ResourceManager.GetString("Play", resourceCulture);
             }
