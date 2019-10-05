@@ -1,18 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>LTFGameLauncher</RootNamespace>
-    <UseWPF>true</UseWPF>
+    <PublishSingleFile>True</PublishSingleFile>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishSingleFile>true</PublishSingleFile>
+    <PublishTrimmed>True</PublishTrimmed>
+    <TrimUnusedDependencies>True</TrimUnusedDependencies>
+    <UseWPF>true</UseWPF>
+    <PublishReadyToRun>True</PublishReadyToRun>
+    <TieredCompilation>True</TieredCompilation>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
- </PropertyGroup>
-
+    <ApplicationIcon>LTF.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CommonServiceLocator" Version="2.0.4" />
-    <PackageReference Include="MvvmLightStd10" Version="5.4.1.2" />
+    <None Remove="LTF.ico" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Packaging.Tools.Trimming" Version="1.1.0-preview1-26619-01" />
+    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LTF.ico" />
+  </ItemGroup>
 </Project>

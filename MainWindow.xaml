@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
         mc:Ignorable="d" MinHeight="200" MinWidth="320" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"
-	    Title="{Binding WindowTitle}" Icon="LTF.ico"
-        FocusManager.FocusedElement="{Binding ElementName=PlayButton}" Background="#FFF0F0F0">
+	    Title="{Binding WindowTitle}"
+        FocusManager.FocusedElement="{Binding ElementName=PlayButton}" Background="#FFF0F0F0" Icon="LTF.ico">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </Window.Resources>

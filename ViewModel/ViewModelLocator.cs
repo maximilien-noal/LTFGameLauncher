@@ -12,8 +12,6 @@
   See http://www.galasoft.ch/mvvm
 */
 
-using CommonServiceLocator;
-
 using GalaSoft.MvvmLight.Ioc;
 
 namespace LTFGameLauncher.ViewModel
@@ -29,8 +27,6 @@ namespace LTFGameLauncher.ViewModel
         /// </summary>
         public ViewModelLocator()
         {
-            ServiceLocator.SetLocatorProvider(() => (IServiceLocator)SimpleIoc.Default);
-
             ////if (ViewModelBase.IsInDesignModeStatic)
             ////{
             ////    // Create design time view services and models
@@ -49,7 +45,7 @@ namespace LTFGameLauncher.ViewModel
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
+                return SimpleIoc.Default.GetInstance<MainViewModel>();
             }
         }
 
