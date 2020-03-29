@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTFGameLauncher", "LTFGameLauncher.csproj", "{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdonisUI", "adonis-ui\src\AdonisUI\AdonisUI.csproj", "{57215F5A-3A8E-4557-A6A0-4980F742D342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdonisUI.ClassicTheme", "adonis-ui\src\AdonisUI.ClassicTheme\AdonisUI.ClassicTheme.csproj", "{37062B76-FB06-4F04-B1D8-F488581EBB98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A5EF971-EBF6-4C76-BFCE-6957F05FC4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57215F5A-3A8E-4557-A6A0-4980F742D342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57215F5A-3A8E-4557-A6A0-4980F742D342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57215F5A-3A8E-4557-A6A0-4980F742D342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57215F5A-3A8E-4557-A6A0-4980F742D342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37062B76-FB06-4F04-B1D8-F488581EBB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37062B76-FB06-4F04-B1D8-F488581EBB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37062B76-FB06-4F04-B1D8-F488581EBB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37062B76-FB06-4F04-B1D8-F488581EBB98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
