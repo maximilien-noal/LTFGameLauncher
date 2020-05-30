@@ -305,7 +305,7 @@ namespace LTFGameLauncher.ViewModel
         {
             try
             {
-                string[] wrapperFiles = { "D3DImm.DLL", "DDraw.DLL", "D3D8.dll", "D3D9.dll", "Glide.dll", "Glide2x.dll", "Glide3x.dll" };
+                string[] wrapperFiles = { "D3DImm.DLL", "dxgi.dll", "DDraw.DLL", "D3D8.dll", "D3D9.dll", "Glide.dll", "Glide2x.dll", "Glide3x.dll" };
                 foreach (var path in wrapperFiles)
                 {
                     string fullPath = Path.Combine(_workDir, path);
