@@ -23,7 +23,7 @@
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="BaseGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
@@ -35,12 +35,26 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
+        <Image MaxWidth="{Binding ActualWidth, ElementName=BaseGrid}" MaxHeight="{Binding ActualHeight, ElementName=BaseGrid}" Stretch="Fill" Grid.ColumnSpan="3" Grid.RowSpan="4">
+            <Image.Style>
+                <Style TargetType="{x:Type Image}">
+                    <Setter Property="Source" Value="{Binding Background}" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Background}" Value="{x:Null}">
+                            <Setter Property="Source" Value="pack://application:,,,/component/error.png" />
+                            <Setter Property="Width" Value="0" />
+                            <Setter Property="Height" Value="0" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
         <StackPanel
             Grid.Row="0"
             Grid.ColumnSpan="3"
             HorizontalAlignment="Center"
             Orientation="Vertical">
-            <Button Name="PlayButton" Command="{Binding PlayButtonCommand}">
+            <Button Margin="2" Name="PlayButton" Command="{Binding PlayButtonCommand}">
                 <Button.Content>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{lex:Loc Play}" Visibility="{Binding IsPlayButtonTextUndefined, Converter={StaticResource BooleanToVisibilityConverter}}" />
@@ -48,7 +62,7 @@
                     </StackPanel>
                 </Button.Content>
             </Button>
-            <CheckBox
+            <CheckBox Margin="2"
                 Name="DisableGraphicalWrapperCheckBox"
                 HorizontalAlignment="Center"
                 IsChecked="{Binding IsGraphicalWrapperDisabled, Mode=TwoWay}"
@@ -58,40 +72,40 @@
                     <TextBlock Text="{Binding GraphicsWrapperName}" />
                 </WrapPanel>
             </CheckBox>
-            <Label
+            <Label Margin="2"
                 Name="GraphicsWrapperCheckBoxLabel"
                 Content="{lex:Loc DisableTip}"
                 Visibility="{Binding IsDisableGraphicalWrapperCheckBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
         </StackPanel>
-        <Button
+        <Button Margin="2"
             Name="Action3Button"
             Grid.Row="1"
             Grid.ColumnSpan="3"
             Command="{Binding Action3ButtonCommand}"
             Content="{Binding Action3Label}"
             Visibility="{Binding IsAction3ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button
+        <Button Margin="10"
             Name="Action1Button"
             Grid.Row="2"
             Grid.Column="0"
             Command="{Binding Action1ButtonCommand}"
             Content="{Binding Action1Label}"
             Visibility="{Binding IsAction1ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button
+        <Button Margin="2"
             Name="ManualButton"
             Grid.Row="2"
             Grid.Column="1"
             Command="{Binding ManualButtonCommand}"
             Content="{lex:Loc Manual}"
             Visibility="{Binding IsManualButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button
+        <Button Margin="2"
             Name="Action2Button"
             Grid.Row="2"
             Grid.Column="3"
             Command="{Binding Action2ButtonCommand}"
             Content="{Binding Action2Label}"
             Visibility="{Binding IsAction2ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button
+        <Button Margin="2"
             Name="Action4Button"
             Grid.Row="3"
             Grid.ColumnSpan="3"
