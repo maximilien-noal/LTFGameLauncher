@@ -24,18 +24,7 @@
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </Window.Resources>
     <Grid x:Name="BaseGrid">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Image MaxWidth="{Binding ActualWidth, ElementName=BaseGrid}" MaxHeight="{Binding ActualHeight, ElementName=BaseGrid}" Stretch="Fill" Grid.ColumnSpan="3" Grid.RowSpan="4">
+        <Image MaxWidth="{Binding ActualWidth, ElementName=BaseGrid}" MaxHeight="{Binding ActualHeight, ElementName=BaseGrid}" Stretch="Fill">
             <Image.Style>
                 <Style TargetType="{x:Type Image}">
                     <Setter Property="Source" Value="{Binding Background}" />
@@ -50,72 +39,71 @@
             </Image.Style>
         </Image>
         <StackPanel
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            HorizontalAlignment="Center"
-            Orientation="Vertical">
-            <Button Margin="2" MinWidth="80" MinHeight="40" Name="PlayButton" Command="{Binding PlayButtonCommand}">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{lex:Loc Play}" Visibility="{Binding IsPlayButtonTextUndefined, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                        <TextBlock Text="{Binding PlayButtonText}" />
-                    </StackPanel>
-                </Button.Content>
-            </Button>
-            <CheckBox Margin="2"
-                Name="DisableGraphicalWrapperCheckBox"
                 HorizontalAlignment="Center"
-                IsChecked="{Binding IsGraphicalWrapperDisabled, Mode=TwoWay}"
-                Visibility="{Binding IsDisableGraphicalWrapperCheckBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
-                <WrapPanel Orientation="Horizontal">
-                    <TextBlock Text="{lex:Loc Disable}" />
-                    <TextBlock Text="{Binding GraphicsWrapperName}" />
-                </WrapPanel>
-            </CheckBox>
-            <Label Margin="2"
-                Name="GraphicsWrapperCheckBoxLabel"
-                Content="{lex:Loc DisableTip}"
-                Visibility="{Binding IsDisableGraphicalWrapperCheckBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                Orientation="Vertical">
+            <StackPanel
+                HorizontalAlignment="Center"
+                Orientation="Vertical">
+                <Button Margin="2" MinWidth="80" MinHeight="40" Name="PlayButton" Command="{Binding PlayButtonCommand}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{lex:Loc Play}" Visibility="{Binding IsPlayButtonTextUndefined, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                            <TextBlock Text="{Binding PlayButtonText}" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <CheckBox Margin="2"
+                    Name="DisableGraphicalWrapperCheckBox"
+                    HorizontalAlignment="Center"
+                    IsChecked="{Binding IsGraphicalWrapperDisabled, Mode=TwoWay}"
+                    Visibility="{Binding IsDisableGraphicalWrapperCheckBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    <TextBlock HorizontalAlignment="Center">
+                        <Run Text="{lex:Loc Disable}" />
+                        <Run Text="{Binding GraphicsWrapperName}" />
+                    </TextBlock>
+                </CheckBox>
+                <Label Margin="2"
+                    Name="GraphicsWrapperCheckBoxLabel"
+                    HorizontalAlignment="Center"
+                    Content="{lex:Loc DisableTip}"
+                    Visibility="{Binding IsDisableGraphicalWrapperCheckBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            </StackPanel>
+            <GroupBox Header="Options" BorderThickness="0">
+                <StackPanel
+                HorizontalAlignment="Center"
+                Orientation="Vertical">
+                    <Button Margin="2"
+                    MinWidth="80" MinHeight="40"
+                    Name="ManualButton"
+                    Command="{Binding ManualButtonCommand}"
+                    Content="{lex:Loc Manual}"
+                    Visibility="{Binding IsManualButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                    <Button Margin="2"
+                    MinWidth="80" MinHeight="40"
+                    Name="Action3Button"
+                    Command="{Binding Action3ButtonCommand}"
+                    Content="{Binding Action3Label}"
+                    Visibility="{Binding IsAction3ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                    <Button Margin="10"
+                    MinWidth="80" MinHeight="40"
+                    Name="Action1Button"
+                    Command="{Binding Action1ButtonCommand}"
+                    Content="{Binding Action1Label}"
+                    Visibility="{Binding IsAction1ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                    <Button Margin="2"
+                    MinWidth="80" MinHeight="40"
+                    Name="Action2Button"
+                    Command="{Binding Action2ButtonCommand}"
+                    Content="{Binding Action2Label}"
+                    Visibility="{Binding IsAction2ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                    <Button Margin="2"
+                    MinWidth="80" MinHeight="40"
+                    Name="Action4Button"
+                    Command="{Binding Action4ButtonCommand}"
+                    Content="{Binding Action4Label}"
+                    Visibility="{Binding IsAction4ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                </StackPanel>
+            </GroupBox>
         </StackPanel>
-        <Button Margin="2"
-                 MinWidth="80" MinHeight="40"
-            Name="Action3Button"
-            Grid.Row="1"
-            Grid.ColumnSpan="3"
-            Command="{Binding Action3ButtonCommand}"
-            Content="{Binding Action3Label}"
-            Visibility="{Binding IsAction3ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button Margin="10"
-                 MinWidth="80" MinHeight="40"
-            Name="Action1Button"
-            Grid.Row="2"
-            Grid.Column="0"
-            Command="{Binding Action1ButtonCommand}"
-            Content="{Binding Action1Label}"
-            Visibility="{Binding IsAction1ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button Margin="2"
-                 MinWidth="80" MinHeight="40"
-            Name="ManualButton"
-            Grid.Row="2"
-            Grid.Column="1"
-            Command="{Binding ManualButtonCommand}"
-            Content="{lex:Loc Manual}"
-            Visibility="{Binding IsManualButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button Margin="2"
-                 MinWidth="80" MinHeight="40"
-            Name="Action2Button"
-            Grid.Row="2"
-            Grid.Column="3"
-            Command="{Binding Action2ButtonCommand}"
-            Content="{Binding Action2Label}"
-            Visibility="{Binding IsAction2ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button Margin="2"
-                 MinWidth="80" MinHeight="40"
-            Name="Action4Button"
-            Grid.Row="3"
-            Grid.ColumnSpan="3"
-            Command="{Binding Action4ButtonCommand}"
-            Content="{Binding Action4Label}"
-            Visibility="{Binding IsAction4ButtonVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
     </Grid>
 </Window>
