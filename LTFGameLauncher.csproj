@@ -166,6 +166,9 @@
   <ItemGroup>
     <Resource Include="component\error.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SPLASH.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

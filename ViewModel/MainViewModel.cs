@@ -5,10 +5,9 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Media;
 using System.Reflection;
 using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 
 namespace LTFGameLauncher.ViewModel
@@ -59,6 +58,12 @@ namespace LTFGameLauncher.ViewModel
             Action2ButtonCommand = new RelayCommand(Action2ButtonCommand_Execute);
             Action3ButtonCommand = new RelayCommand(Action3ButtonCommand_Execute);
             Action4ButtonCommand = new RelayCommand(Action4ButtonCommand_Execute);
+
+            if (File.Exists("background.wav"))
+            {
+                var player = new SoundPlayer("background.wav");
+                player.PlayLooping();
+            }
 
             if (File.Exists("background.png"))
             {

@@ -6,8 +6,8 @@
     xmlns:lex="http://wpflocalizeextension.codeplex.com"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="{Binding WindowTitle}"
-    MinWidth="320"
-    MinHeight="200"
+    MinWidth="400"
+    MinHeight="300"
     lex:ResxLocalizationProvider.DefaultAssembly="LTFGameLauncher"
     lex:ResxLocalizationProvider.DefaultDictionary="Localization"
     DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
@@ -68,7 +68,7 @@
                     Content="{lex:Loc DisableTip}"
                     Visibility="{Binding IsDisableGraphicalWrapperCheckBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
             </StackPanel>
-            <GroupBox Header="Options" BorderThickness="0">
+            <GroupBox Header="Options" BorderThickness="0" Opacity="50">
                 <StackPanel
                 HorizontalAlignment="Center"
                 Orientation="Vertical">

@@ -22,6 +22,12 @@ namespace LTFGameLauncher
 
         private Uri _currentTheme = default;
 
+        public App()
+        {
+            var splashscreen = new SplashScreen("SPLASH.PNG");
+            splashscreen.Show(autoClose: true);
+        }
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
